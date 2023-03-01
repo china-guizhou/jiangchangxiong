@@ -6,11 +6,40 @@
 
     <groupId>com.jiangchangxiong</groupId>
     <artifactId>jiangchangxiong</artifactId><packaging>pom</packaging>
-    <version>0.0.1</version><modules><module>core</module><module>dependencies</module><module>modules</module><module>addons</module><module>starter</module></modules>
+    <version>0.0.1</version>
+
+    <modules>
+        <module>core</module>
+        <module>dependencies</module>
+        <module>modules</module>
+        <module>addons</module>
+        <module>starter</module><module>bootstrap</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <dependencies.version>0.0.1</dependencies.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.jiangchangxiong</groupId>
+                <artifactId>dependencies</artifactId>
+                <version>${dependencies.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+    </dependencies>
     
 </project>
