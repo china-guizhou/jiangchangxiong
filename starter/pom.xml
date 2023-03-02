@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"><parent><artifactId>jiangchangxiong</artifactId><groupId>com.jiangchangxiong</groupId><version>0.0.1</version></parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>starter</artifactId><packaging>pom</packaging><modules><module>starter-log</module><module>starter-cache</module></modules>
+    <artifactId>starter</artifactId><packaging>pom</packaging><modules><module>starter-log</module><module>starter-cache</module><module>starter-mp</module></modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

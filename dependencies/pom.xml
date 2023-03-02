@@ -20,6 +20,7 @@
         <sa.token.version>1.34.0</sa.token.version>
         <mybatis.plus.version>3.5.3.1</mybatis.plus.version>
         <postgresql.version>42.5.4</postgresql.version>
+        <jiangchangxiong.version>0.0.1</jiangchangxiong.version>
     </properties>
 
     <dependencyManagement>
@@ -97,6 +98,33 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+            </dependency>
+
+            <!-- 平台自身依赖 -->
+            <dependency>
+                <groupId>com.jiangchangxiong</groupId>
+                <artifactId>core</artifactId>
+                <version>${jiangchangxiong.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.jiangchangxiong</groupId>
+                <artifactId>module-system-api</artifactId>
+                <version>${jiangchangxiong.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.jiangchangxiong</groupId>
+                <artifactId>starter-mp</artifactId>
+                <version>${jiangchangxiong.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.jiangchangxiong</groupId>
+                <artifactId>starter-cache</artifactId>
+                <version>${jiangchangxiong.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.jiangchangxiong</groupId>
+                <artifactId>starter-log</artifactId>
+                <version>${jiangchangxiong.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
