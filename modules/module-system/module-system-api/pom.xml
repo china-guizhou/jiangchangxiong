@@ -17,6 +17,11 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-annotation</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.jiangchangxiong</groupId>
+            <artifactId>starter-mp</artifactId>
+        </dependency>
     </dependencies>
     
 </project>
