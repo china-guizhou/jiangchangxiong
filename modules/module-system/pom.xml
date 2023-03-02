@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>module-system</artifactId>
+    <artifactId>module-system</artifactId><packaging>pom</packaging><modules><module>module-system-api</module><module>module-system-business</module></modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

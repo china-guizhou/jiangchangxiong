@@ -1,13 +1,17 @@
 package com.jiangchangxiong;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 /**
  * @author Jiang
- * @since 2023-03-01
+ * @since  2023-03-01
  */
+@SpringBootApplication
 public class AppBootstrap {
 
     public static void main(String[] args) {
-
+        SpringApplication.run(AppBootstrap.class, args);
     }
 
 }

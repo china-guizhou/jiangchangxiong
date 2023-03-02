@@ -1,0 +1,8 @@
+ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____
+||j |||i |||a |||n |||g |||c |||h |||a |||n |||g |||x |||i |||o |||n |||g ||
+||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+
+Spring Boot Version : ${spring-boot.formatted-version}
+Application Version : ${application.version}
+Application Name    : ${spring.application.name}
