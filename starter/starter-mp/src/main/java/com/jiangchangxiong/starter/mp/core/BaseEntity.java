@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
  * @since  2023-03-02
  */
 @Data
-public class IEntity implements Serializable {
+public class BaseEntity implements Serializable {
 
     @JsonSerialize(using = ToStringSerializer.class)
     @TableId(value = "id", type = IdType.INPUT)

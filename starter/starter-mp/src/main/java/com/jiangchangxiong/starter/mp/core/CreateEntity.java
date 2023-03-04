@@ -13,7 +13,7 @@ import lombok.Data;
  * @since  2023-03-02
  */
 @Data
-public class CreateEntity extends IEntity {
+public class CreateEntity extends BaseEntity {
 
     @JsonSerialize(using = ToStringSerializer.class)
     @TableField(fill = FieldFill.INSERT)
