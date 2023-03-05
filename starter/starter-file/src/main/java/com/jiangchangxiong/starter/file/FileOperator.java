@@ -1,9 +1,9 @@
 package com.jiangchangxiong.starter.file;
 
-import com.cmcc.satp.plugins.file.domain.DownloadParam;
-import com.cmcc.satp.plugins.file.domain.DownloadResult;
-import com.cmcc.satp.plugins.file.domain.UploadParam;
-import com.cmcc.satp.plugins.file.domain.UploadResult;
+import com.jiangchangxiong.starter.file.domain.DownloadParam;
+import com.jiangchangxiong.starter.file.domain.DownloadResult;
+import com.jiangchangxiong.starter.file.domain.UploadParam;
+import com.jiangchangxiong.starter.file.domain.UploadResult;
 
 /**
  * 统一暴露的文件操作接口

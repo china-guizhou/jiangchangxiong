@@ -8,6 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since  2023-03-01
  */
 @SpringBootApplication
+@ComponentScan(basePackages={"cn.hutool.extra.spring"})
+@Import(cn.hutool.extra.spring.SpringUtil.class)
 public class AppBootstrap {
 
     public static void main(String[] args) {

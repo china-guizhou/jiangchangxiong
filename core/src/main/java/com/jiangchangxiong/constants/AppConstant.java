@@ -7,6 +7,11 @@ package com.jiangchangxiong.constants;
 public interface AppConstant {
 
     String CONFIG_PREFIX = "jcx";
+    
+    
+    String SFTP = "SFTP";
+    
+    String LOCAL = "LOCAL";
 
 
 }

@@ -1,17 +1,18 @@
 package com.jiangchangxiong.starter.file;
 
 import cn.hutool.core.io.FileUtil;
-import com.cmcc.satp.core.constant.Constants;
-import com.cmcc.satp.plugins.UidGenerator;
-import com.cmcc.satp.plugins.file.domain.DownloadParam;
-import com.cmcc.satp.plugins.file.domain.DownloadResult;
-import com.cmcc.satp.plugins.file.domain.UploadParam;
-import com.cmcc.satp.plugins.file.domain.UploadResult;
-import com.cmcc.satp.utils.FileUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+
+import com.jiangchangxiong.constants.AppConstant;
+import com.jiangchangxiong.starter.file.domain.DownloadParam;
+import com.jiangchangxiong.starter.file.domain.DownloadResult;
+import com.jiangchangxiong.starter.file.domain.UploadParam;
+import com.jiangchangxiong.starter.file.domain.UploadResult;
+import com.jiangchangxiong.starter.mp.meta.UidGenerator;
+import com.jiangchangxiong.utils.FileUtils;
 
 import java.io.BufferedInputStream;
 
@@ -23,10 +24,10 @@ import java.io.BufferedInputStream;
 @Component
 public class LocalFileOperator extends FileOperator{
 
-    @Value("${satp.cat.file.local.path:}")
+    @Value("${jcx.file.local.path:}")
     private String path;
 
-    @Value("${satp.cat.file.tempPath:}")
+    @Value("${jcx.file.tempPath:}")
     private String tempPath;
 
     @Autowired
@@ -35,7 +36,7 @@ public class LocalFileOperator extends FileOperator{
     @Override
     public UploadResult upload(UploadParam param) {
         UploadResult result = new UploadResult();
-        result.setType(Constants.LOCAL);
+        result.setType(AppConstant.LOCAL);
         result.setSuccess(false);
 
         try {

@@ -1,17 +1,18 @@
 package com.jiangchangxiong.starter.file;
 
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
-import com.cmcc.satp.core.constant.Constants;
-import com.cmcc.satp.plugins.UidGenerator;
-import com.cmcc.satp.plugins.file.domain.DownloadParam;
-import com.cmcc.satp.plugins.file.domain.DownloadResult;
-import com.cmcc.satp.plugins.file.domain.UploadParam;
-import com.cmcc.satp.plugins.file.domain.UploadResult;
-import com.cmcc.satp.plugins.file.sftp.SftpPool;
-import com.cmcc.satp.utils.FileUtils;
-import com.cmcc.satp.utils.UUIDUtil;
+
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.SftpException;
+import com.jiangchangxiong.constants.AppConstant;
+import com.jiangchangxiong.starter.file.domain.DownloadParam;
+import com.jiangchangxiong.starter.file.domain.DownloadResult;
+import com.jiangchangxiong.starter.file.domain.UploadParam;
+import com.jiangchangxiong.starter.file.domain.UploadResult;
+import com.jiangchangxiong.starter.file.sftp.SftpPool;
+import com.jiangchangxiong.starter.mp.meta.UidGenerator;
+import com.jiangchangxiong.utils.FileUtils;
+
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -54,9 +55,10 @@ public class SftpFileOperator extends FileOperator{
         // 从连接池获取Sftp连接
         ChannelSftp sftp = pool.borrowObject();
         UploadResult result = new UploadResult();
-        result.setType(Constants.SFTP);
+        result.setType(AppConstant.SFTP);
         result.setSuccess(false);
         try {
+        
             String destDir = FileUtils.getCurrentUploadPath(path, "/");
             String destFileName = uidGenerator.getUid() + "." + param.getFileExt();
             mkdirs(sftp, destDir);
@@ -154,7 +156,7 @@ public class SftpFileOperator extends FileOperator{
             sftp.cd(sftpPathDay);
             InputStream input = sftp.get(param.getDestFileName());
 
-            localFile = new File(localPath + "/" + UUIDUtil.shortUuid() + "-" + originalFileName);
+            localFile = new File(localPath + "/" + uidGenerator.getUid() + "-" + originalFileName);
             if (!localFile.getParentFile().exists()) {
                 localFile.getParentFile().mkdirs();
                 localFile.createNewFile();
