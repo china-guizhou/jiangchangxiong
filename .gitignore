@@ -8,3 +8,5 @@
 .DS_Store
 *.patch
 *.log
+.factorypath
+**/.factorypath
