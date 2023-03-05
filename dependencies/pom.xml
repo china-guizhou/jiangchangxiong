@@ -94,6 +94,12 @@
                 <artifactId>sa-token-core</artifactId>
                 <version>${sa.token.version}</version>
             </dependency>
+            
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-dao-redis-jackson</artifactId>
+                <version>${sa.token.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>cn.hutool</groupId>
@@ -152,6 +158,11 @@
             <dependency>
                 <groupId>com.jiangchangxiong</groupId>
                 <artifactId>starter-log</artifactId>
+                <version>${jiangchangxiong.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.jiangchangxiong</groupId>
+                <artifactId>starter-security</artifactId>
                 <version>${jiangchangxiong.version}</version>
             </dependency>
 

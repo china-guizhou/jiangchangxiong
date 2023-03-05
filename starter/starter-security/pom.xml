@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.jiangchangxiong</groupId>
+    <artifactId>starter</artifactId>
+    <version>0.0.1</version>
+  </parent>
+  <artifactId>starter-security</artifactId>
+  <description>integrate with satoken</description>
+  <name>starter-security</name>
+  <packaging>jar</packaging>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>17</java.version>
+  </properties>
+  <dependencies>
+	  <dependency>
+		  <groupId>com.jiangchangxiong</groupId>
+		  <artifactId>core</artifactId>
+	  </dependency>
+	  
+	  <dependency>
+		  <groupId>cn.dev33</groupId>
+		  <artifactId>sa-token-core</artifactId>
+	  </dependency>
+	  
+	  <dependency>
+		  <groupId>cn.dev33</groupId>
+		  <artifactId>sa-token-dao-redis-jackson</artifactId>
+	  </dependency>
+  </dependencies>
+</project>
