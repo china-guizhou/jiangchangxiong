@@ -21,4 +21,18 @@ public class SysArea extends UpdateEntity {
 
 	private String name;
 
+	private String alias;
+
+	private Integer level;
+
+	private Integer sort;
+
+	private Boolean enabled;
+
+	private String description;
+
+	private String lot;
+
+	private String lat;
+
 }
