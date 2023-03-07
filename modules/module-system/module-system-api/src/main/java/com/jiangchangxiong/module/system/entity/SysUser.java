@@ -1,5 +1,6 @@
 package com.jiangchangxiong.module.system.entity;
 
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.jiangchangxiong.starter.mp.core.UpdateEntity;
 
@@ -28,7 +29,7 @@ public class SysUser extends UpdateEntity {
 
 	private String realname;
 
-	private String idCard;
+	private String cardNo;
 
 	/** 对应字典CARD_TYPE */
 	private String cardType;
@@ -56,7 +57,11 @@ public class SysUser extends UpdateEntity {
 	/** 是否验证（验证邮箱） */
 	private Boolean valid;
 
+	/** 识别最近登录的设备标识码（多个用;进行分割，最多支持3个常用设备） */
+//	private String deviceUid;
+
 	/** 用户注销后 */
-	private Boolean isDeleted;
+	@TableLogic(value = "0", delval = "1")
+	private Integer isDeleted;
 
 }
