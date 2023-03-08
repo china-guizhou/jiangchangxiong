@@ -16,7 +16,7 @@ import lombok.Setter;
 @Setter
 @Getter
 @TableName("sys_user")
-public class SysUser extends UpdateEntity {
+public class User extends UpdateEntity {
 
 	private static final long serialVersionUID = 3090933552454569528L;
 

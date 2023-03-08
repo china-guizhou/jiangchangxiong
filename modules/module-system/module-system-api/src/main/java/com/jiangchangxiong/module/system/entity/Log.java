@@ -13,7 +13,7 @@ import lombok.Setter;
 @Setter
 @Getter
 @TableName("sys_log")
-public class SysLog extends BaseEntity {
+public class Log extends BaseEntity {
 
 	private static final long serialVersionUID = 6459431984176846222L;
 

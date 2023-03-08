@@ -15,7 +15,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @TableName("sys_dict")
-public class SysDict extends UpdateEntity {
+public class Dict extends UpdateEntity {
 
 	private static final long serialVersionUID = -6856478003586220396L;
 

@@ -13,7 +13,7 @@ import lombok.Setter;
 @Setter
 @Getter
 @TableName("sys_parameter")
-public class SysParameter extends UpdateEntity {
+public class Parameter extends UpdateEntity {
 
 	private static final long serialVersionUID = -2443440164128695029L;
 
