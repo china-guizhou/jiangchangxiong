@@ -13,7 +13,7 @@
         <module>dependencies</module>
         <module>modules</module>
         <module>addons</module>
-        <module>starter</module><module>bootstrap</module>
+        <module>bootstrap</module>
     </modules>
 
     <properties>

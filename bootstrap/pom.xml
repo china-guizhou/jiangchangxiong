@@ -23,14 +23,9 @@
         </dependency>
         
         <dependency>
-			<groupId>com.jiangchangxiong</groupId>
-			<artifactId>module-system-business</artifactId>
-		</dependency>
-		
-		<dependency>
-			<groupId>com.jiangchangxiong</groupId>
-			<artifactId>module-blog-business</artifactId>
-		</dependency>
+            <groupId>com.jiangchangxiong</groupId>
+            <artifactId>modules</artifactId>
+        </dependency>
 		
 		<dependency>
 			<groupId>cn.hutool</groupId>

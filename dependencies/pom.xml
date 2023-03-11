@@ -127,24 +127,16 @@
             </dependency>
             <dependency>
                 <groupId>com.jiangchangxiong</groupId>
-                <artifactId>module-system-api</artifactId>
+                <artifactId>addons</artifactId>
                 <version>${jiangchangxiong.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>com.jiangchangxiong</groupId>
-                <artifactId>module-system-business</artifactId>
+                <artifactId>modules</artifactId>
                 <version>${jiangchangxiong.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.jiangchangxiong</groupId>
-                <artifactId>module-blog-api</artifactId>
-                <version>${jiangchangxiong.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.jiangchangxiong</groupId>
-                <artifactId>module-blog-business</artifactId>
-                <version>${jiangchangxiong.version}</version>
-            </dependency>
+
             <dependency>
                 <groupId>com.jiangchangxiong</groupId>
                 <artifactId>starter-mp</artifactId>
