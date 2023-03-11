@@ -137,27 +137,6 @@
                 <version>${jiangchangxiong.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>com.jiangchangxiong</groupId>
-                <artifactId>starter-mp</artifactId>
-                <version>${jiangchangxiong.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.jiangchangxiong</groupId>
-                <artifactId>starter-cache</artifactId>
-                <version>${jiangchangxiong.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.jiangchangxiong</groupId>
-                <artifactId>starter-log</artifactId>
-                <version>${jiangchangxiong.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.jiangchangxiong</groupId>
-                <artifactId>starter-security</artifactId>
-                <version>${jiangchangxiong.version}</version>
-            </dependency>
-
         </dependencies>
     </dependencyManagement>
     
