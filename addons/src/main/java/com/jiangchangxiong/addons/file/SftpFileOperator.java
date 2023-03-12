@@ -35,6 +35,7 @@ import lombok.extern.slf4j.Slf4j;
 @Component
 public class SftpFileOperator extends FileOperator {
 
+	@Autowired(required = false)
 	private SftpPool pool;
 
 	@Value("${satp.cat.file.sftp.path:}")
@@ -45,10 +46,6 @@ public class SftpFileOperator extends FileOperator {
 
 	@Autowired
 	private UidGenerator uidGenerator;
-
-	public SftpFileOperator(SftpPool pool) {
-		this.pool = pool;
-	}
 
 	@Override
 	public UploadResult upload(UploadParam param) {

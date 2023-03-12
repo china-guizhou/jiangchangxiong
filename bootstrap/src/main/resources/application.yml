@@ -1,7 +1,16 @@
 spring:
   application:
     name: jiangchangxiong
-
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 10
+      auto-commit: true
+      idle-timeout: 10000
+      pool-name: HikariCP
+      max-lifetime: 1800000
+      connection-timeout: 3000
 server:
   port: 19999
     

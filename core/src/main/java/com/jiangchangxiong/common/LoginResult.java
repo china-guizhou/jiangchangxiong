@@ -1,4 +1,4 @@
-package com.jiangchangxiong.modules.system.domain.vo;
+package com.jiangchangxiong.common;
 
 import lombok.Getter;
 import lombok.Setter;

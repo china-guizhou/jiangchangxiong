@@ -1,4 +1,4 @@
-package com.jiangchangxiong.modules.system.domain.fo;
+package com.jiangchangxiong.common;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -11,7 +11,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class UserLogin {
+public class LoginForm {
 
 	private String type;
 

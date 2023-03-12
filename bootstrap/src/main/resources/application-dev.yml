@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jiangchangxiong?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false&allowMultiQueries=true
+    username: justool
+    password: jcx120708
+
+jcx:
+  file:
+    type: LOCAL
+    local:
+      path: D:/data/upload/jcx
