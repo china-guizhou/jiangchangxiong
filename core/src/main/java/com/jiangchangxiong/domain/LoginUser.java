@@ -1,4 +1,4 @@
-package com.jiangchangxiong.common;
+package com.jiangchangxiong.domain;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;

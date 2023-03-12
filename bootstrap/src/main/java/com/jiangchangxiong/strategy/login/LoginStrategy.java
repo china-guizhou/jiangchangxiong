@@ -1,7 +1,7 @@
 package com.jiangchangxiong.strategy.login;
 
-import com.jiangchangxiong.common.LoginForm;
-import com.jiangchangxiong.common.LoginResult;
+import com.jiangchangxiong.domain.LoginForm;
+import com.jiangchangxiong.domain.LoginResult;
 import com.jiangchangxiong.exception.LoginFailureException;
 
 /**

@@ -1,4 +1,4 @@
-package com.jiangchangxiong.common;
+package com.jiangchangxiong.domain;
 
 import lombok.Getter;
 import lombok.Setter;
